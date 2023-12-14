@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saifur Rehman</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/files/ico.jpg">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/9450815b92.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="header-text">
+                <p>UH Alumni & Software Engineer</p>
+                <h1>Hi, I'm <span>Saifur Rehman</span>.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="row">
+            <div class="about-1">
+                <img src="/files/grad.jpg">
+            </div>
+
+            <div class="about-2">
+                <h1 class="subtitle">About Me</h1>
+                <p style="font-size: 13px;">
+                    Hi! You can call me Saif (Sef).
+                    <br>
+                    An adrenaline junkie who does things you may find unfathomable.
+                    <br>
+                    Someone who doesn't give up, regardless of what's ahead.
+                    <br>
+                    A person that's always willing to help those in need.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience<p>
+                    <p class="tab-links" onclick="openTab('skills')">Skills</p>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>University of Houston</span></li>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i> Houston, Texas
+                            <br>
+                            B.S. in Computer Science, Minor in Mathematics
+                        </p>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>FAST Enterprises</span>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i> Lansing, Michigan
+                            <br>
+                            Software Engineer
+                            <br>
+                            July 2023 - Present
+                        </li>
+                        </p>
+
+                        <li><span>TensorIoT</span>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i> Remote
+                            <br>
+                            Software Engineer Intern
+                            <br>
+                            January 2023 - May 2023
+                        </li>
+                        </p>
+
+                        <li><span>EAG</span>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i> Houston, Texas
+                            <br>
+                            IT Analyst Intern
+                            <br>
+                            January 2022 - August 2022
+                        </li>
+                        </p>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Languages</span></li>
+                        <p>C++, C#, VB.NET, MSSQL, Python, Java, JavaScript, HTML, CSS</p>
+                        <li><span>Frameworks</span></li>
+                        <p>Node.js, React, React Native</p>
+                        <li><span>Database Management</span></li>
+                        <p>Microsoft SQL Server Management Studio</p>
+                        <li><span>Version Control Systems</span></li>
+                        <p>Git, SVN, CodeCommit</p>
+                        <li><span>Continuous Integration</span></li>
+                        <p>Jenkins</p>
+                        <li><span>AWS Cloud Services</span></li>
+                        <p>API Gateway, AppSync, CDK, CloudFormation, Cognito, DynamoDB, Lambda</p>
+                        <li><span>Project Management Systems</span></li>
+                        <p>Jira, Smartsheet</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="work">
+        <br>
+        <h1 class="subtitle" id="worksub">My Work</h1>
+        <div class="projects">
+            <div class="projects-list">
+                <img src="/files/lahabibi.png">
+                <div class="layer">
+                    <h3>La Habibi Restaurant</h3>
+                    <p>Worked in a team of 3 to make a restaurant website where users can create an account, sign in, and create reservations for various party sizes</p>
+                    <a href="https://github.com/ssaifurrehmann/la-habibi-restaurant" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="projects-list">
+                <img src="/files/pentagram.png">
+                <div class="layer">
+                    <h3>Pentagram Safety Solutions</h3>
+                    <p>Collaborated in a team of 4 to create a project based on solving issues surrounding workplace safety of construction site workers</p>
+                    <a href="https://github.com/ssaifurrehmann/pentagram" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+            <h1 class="subtitle">Contact</h1>
+            <div class="socials">
+                <a href="https://github.com/ssaifurrehmann" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/ssaifurrehmann" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="/files/Resume.pdf" target="_blank"><i class="fa-solid fa-circle-down"></i></a>
+            </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2023 Saifur Rehman.</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+</html>

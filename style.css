@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  color: white;
+  background: black;
+  scroll-behavior: smooth;
+}
+
+#header {
+  height: 100%;
+  width: 100%;
+  background-size: 50%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url(/files/home.jpeg);
+}
+
+.container {
+  margin: 5%;
+  display: inline-block;
+}
+
+.navbar ul li {
+  margin: 1%;
+  display: inline-block;
+}
+
+.navbar ul li a {
+  color: white;
+  font-size: 18px;
+  position: relative;
+  text-decoration: none;
+}
+
+.navbar ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  margin: auto;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  transition: 0.5s;
+  background: rgb(0, 100, 255);
+  position: absolute;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  font-size: 25px;
+  margin-top: 45%;
+}
+
+.header-text h1 {
+  font-size: 45px;
+  overflow: hidden;
+  border-right: 3px solid white;
+  white-space: nowrap;
+  margin: auto;
+  animation: typing 4s, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.header-text h1 span {
+  color: rgb(0, 100, 255);
+}
+
+#about {
+  color: white;
+  margin: 5%;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-1 {
+  flex-basis: 40%;
+}
+
+.about-1 img {
+  width: 100%;
+  height: 100%;
+  margin-top: 8%;
+  border-radius: 25%;
+}
+
+.about-2 {
+  margin-top: 5%;
+  flex-basis: 50%;
+}
+
+.subtitle {
+  margin-bottom: 15px;
+  font-size: 40px;
+  color: white;
+}
+
+.tab-titles {
+  display: flex;
+  margin-top: 20px;
+}
+
+.tab-links {
+  margin-right: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  margin: auto;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  transition: 0.5s;
+  background: red;
+  position: absolute;
+}
+
+.tab-links:hover::after {
+  width: 100%;
+}
+
+.tab-links.active-link::after {
+  width: 100%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.tab-contents ul li span {
+  color: rgb(255, 15, 15);
+  font-size: 15px;
+}
+
+.tab-contents p {
+  font-size: 13px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+#work {
+  height: 90vh;
+  margin: 5%;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 100px;
+  margin-top: 10%;
+}
+
+.projects-list {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-list img {
+  margin: auto;
+  width: 100%;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.projects-list:hover img {
+  transform: scale(1.05);
+}
+
+.projects-list:hover .layer {
+  height: 100%;
+}
+
+.layer {
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(15, 15, 15));
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15%;
+  text-align: center;
+  font-size: 15px;
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+.layer a {
+  margin-top: 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 45px;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+#contact {
+  color: white;
+  height: 20%;
+  text-align: center;
+}
+
+.socials i {
+  color: white;
+  padding: 0 0.35%;
+  font-size: 30px;
+  transition: transform 0.5s;
+}
+
+.socials i:hover {
+  color: rgb(0, 100, 255);
+  transform: translateY(-5px);
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  background: #262626;
+  font-weight: bold;
+  padding: 1%;
+}
